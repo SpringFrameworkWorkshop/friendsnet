@@ -2,7 +2,7 @@ package io.spring.friendsnet.manager;
 
 import io.spring.friendsnet.dao.GroupDAO;
 import io.spring.friendsnet.entity.Person;
-import io.spring.friendsnet.entity.PersonGroup;
+import io.spring.friendsnet.entity.Group;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,39 +15,39 @@ public class GroupManagerImpl implements GroupManager {
 
 
     @Override
-    public Iterable<PersonGroup> findAll() {
+    public Iterable<Group> findAll() {
         return dao.findAll();
     }
 
     @Override
-    public PersonGroup findById(Long aLong) {
+    public Group findById(Long aLong) {
         return null;
     }
 
     @Override
-    public PersonGroup save(PersonGroup person) {
+    public Group save(Group person) {
         return dao.save(person);
     }
 
     @Override
-    public Iterable<PersonGroup> save(Iterable<PersonGroup> people) {
+    public Iterable<Group> save(Iterable<Group> people) {
         return null;
     }
 
     @Override
-    public PersonGroup update(PersonGroup person) {
+    public Group update(Group person) {
         return null;
     }
 
     @Override
-    public Iterable<PersonGroup> update(Iterable<PersonGroup> people) {
+    public Iterable<Group> update(Iterable<Group> people) {
         return null;
     }
 
     @Override
     public void remove(Long id) {
-        final PersonGroup personGroup = dao.findById(id);
-        dao.remove(personGroup);
+        final Group group = dao.findById(id);
+        dao.remove(group);
     }
 
     @Override

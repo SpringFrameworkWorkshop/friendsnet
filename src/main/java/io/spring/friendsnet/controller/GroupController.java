@@ -1,6 +1,6 @@
 package io.spring.friendsnet.controller;
 
-import io.spring.friendsnet.entity.PersonGroup;
+import io.spring.friendsnet.entity.Group;
 import io.spring.friendsnet.manager.GroupManager;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,22 +15,22 @@ public class GroupController {
     private GroupManager manager;
 
     @GetMapping
-    public List<PersonGroup> getAll(){
-        return (List<PersonGroup>) manager.findAll();
+    public List<Group> getAll(){
+        return (List<Group>) manager.findAll();
     }
 
     @GetMapping("/{id}")
-    public PersonGroup getById(@PathVariable Long id){
+    public Group getById(@PathVariable Long id){
         return null;
     }
 
     @PostMapping
-    public PersonGroup create(@RequestBody PersonGroup personGroup){
-        return manager.save(personGroup);
+    public Group create(@RequestBody Group group){
+        return manager.save(group);
     }
 
     @PostMapping("/{id}/relate")
-    public PersonGroup relate(@PathVariable Long id, @RequestBody List<Long> persons){
+    public Group relate(@PathVariable Long id, @RequestBody List<Long> persons){
         return null;
     }
 

@@ -21,7 +21,7 @@ public class Person implements FNEntity {
     private byte[] picture;
 
     @OneToMany(mappedBy = "person", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
-    private Set<PersonGroup> groups;
+    private Set<Group> groups;
 
     @ManyToOne
     private Person parent;

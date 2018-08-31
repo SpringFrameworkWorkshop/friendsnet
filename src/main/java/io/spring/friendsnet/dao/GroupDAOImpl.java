@@ -1,13 +1,13 @@
 package io.spring.friendsnet.dao;
 
-import io.spring.friendsnet.entity.PersonGroup;
+import io.spring.friendsnet.entity.Group;
 import io.spring.friendsnet.entity.Person;
 import org.springframework.stereotype.Service;
 
 @Service
-public class GroupDAOImpl extends AbstractDAO<PersonGroup, Long> implements GroupDAO {
+public class GroupDAOImpl extends AbstractDAO<Group, Long> implements GroupDAO {
     @Override
-    public PersonGroup addPersons(Iterable<Person> persons) {
+    public Group addPersons(Iterable<Person> persons) {
         return null;
     }
 

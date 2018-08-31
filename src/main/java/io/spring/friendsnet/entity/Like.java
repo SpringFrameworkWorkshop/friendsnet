@@ -12,7 +12,7 @@ import java.util.Date;
 @Getter
 @Setter
 @Entity
-public class PostLike implements FNEntity {
+public class Like implements FNEntity {
 
     @Id
     @GeneratedValue

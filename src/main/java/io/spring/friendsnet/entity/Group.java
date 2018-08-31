@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-public class PersonGroup implements FNEntity {
+public class Group implements FNEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
